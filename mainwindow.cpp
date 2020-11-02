@@ -267,7 +267,7 @@ void MainWindow::loadFile(const QString &fileName)
             sDataCoordXY tmpXY;
             tmpXY.X=0;
             tmpXY.Y=0;
-            int a = 1;
+//            int a = 1;
             fnRecalcLatLon2XYMerc(&sGPS, &sXY);
             vCoordXY.push_back(sXY);
             if (sXY.X != tmpXY.X || sXY.Y != tmpXY.Y)
