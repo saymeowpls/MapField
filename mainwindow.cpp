@@ -135,11 +135,11 @@ void MainWindow::loadFile(const QString &fileName)
     QVector<sDataGPS> vGPS;
     QVector<sDataCoordXY> vCoordXY;
     while (!file.atEnd()) {
-        int res = file.read(&cTmpBuff[0], 512);
+//        int res = file.read(&cTmpBuff[0], 512);
         QByteArray qbTmpBuff(cTmpBuff,512);
         QString qsTmpBuffStr(qbTmpBuff);
         int num;
-        if(num = qsTmpBuffStr.indexOf(qsGPSB, 0) == -1){
+        if((num = qsTmpBuffStr.indexOf(qsGPSB, 0)) == -1){
             numbl++;
 //                qDebug() << numbl << "\n";
             flagGPS = false;
