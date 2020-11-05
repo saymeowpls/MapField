@@ -6,19 +6,39 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1301</width>
+    <height>673</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QCustomPlot" name="widget" native="true">
+   <widget class="QCustomPlot" name="Ox" native="true">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>230</y>
+      <x>10</x>
+      <y>140</y>
+      <width>421</width>
+      <height>291</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="Oz" native="true">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>140</y>
+      <width>421</width>
+      <height>291</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="Oy" native="true">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>140</y>
       <width>421</width>
       <height>291</height>
      </rect>
@@ -30,7 +50,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1301</width>
      <height>21</height>
     </rect>
    </property>
@@ -53,7 +73,7 @@
   <customwidget>
    <class>QCustomPlot</class>
    <extends>QWidget</extends>
-   <header>qcustomplot.h</header>
+   <header>../../qcustomplot.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
